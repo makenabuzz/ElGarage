@@ -1,0 +1,232 @@
+body {
+     background-color: #212222;
+     color: white;
+}
+
+.border {
+     width: 200px;
+     text-align: center;
+     padding: 1px;
+     margin: 0 auto 10px;
+     font-size:100px;
+}
+
+.caption {
+     text-align: center;
+     padding-top: 110px;
+}
+
+#menu {
+     width: 230px;
+     text-align: center;
+     padding: 1px;
+     margin: 0 auto 10px;
+     font-size: 25px;
+
+}
+
+
+
+
+/*from something else*/
+.mainNav {
+     overflow: hidden;
+     background-color: black;
+     /*position: fixed;*/
+     top: 0;
+     width: 100%;
+     z-index: 100;
+     transition: top 3s;
+     list-style: none;
+     /*text-align: center;*/
+}
+
+/*from something else*/
+.mainNav a {
+     color: #ffffff;
+     padding: 40px 45px;
+     text-decoration: none;
+     font-size: 30px;
+     display: inline-block;
+}
+
+.mymainNav a:hover {
+     background-color: tomato;
+}
+
+.mainNav .icon {
+     display: none;
+}
+
+.header {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.Logo {
+     width: 30%;
+     /* margin: 0 auto; */
+}
+
+h1 {
+     font-family: fleisch-wolf, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+}
+
+h2 {
+     font-family: fleisch-wolf, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+}
+
+h3 {
+     font-family: sans-serif;
+     font-size: 16pt;
+}
+
+p {
+     font-size: 14pt;
+     font-family: sans-serif;
+}
+
+a {
+     font-family: sans-serif;
+     color: white;
+     text-decoration: none;
+     font-size: 16pt;
+     padding: 18px;
+}
+
+.mymainNav {
+     overflow: hidden;
+     background-color: #212222;
+     display: flex;
+     justify-content: center;
+     align-items: baseline;
+     width: 100%;
+     flex-wrap: wrap;
+}
+
+.img1 {
+     background-image: url("image1.png");
+     min-height: 400px;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.img2 {
+     background-image: url("image2.png");
+     min-height: 400px;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.img3 {
+     background-image: url("image3.png");
+     min-height: 400px;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#about {
+     line-height: 25px;
+     padding: 40px;
+}
+
+#merch{
+     width: 230px;
+     text-align: center;
+     padding: 1px;
+     margin: 0 auto 10px;
+     font-size: 25px;
+
+}
+
+.contactsection{
+padding: 40px;
+
+}
+
+.flex_container_menu {
+
+     display: flex;
+     flex-direction: row;
+     /*flex-wrap: wrap;*/
+     justify-content: center;
+
+
+}
+
+.flexmenu_item {
+     margin: 0 1%;
+
+
+
+}
+
+.cfullmenu {
+     background-color: tomato;
+     width: 200px;
+     text-align: center;
+     padding: 1px;
+     margin: 0 auto 10px;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+     .img1, .img2, .img3 {
+          position: relative;
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+     }
+
+     /*from nav thing*/
+     @media screen and (max-width: 800px) {
+          .mainNav a {
+               display: none;
+          }
+
+          .mainNav a.icon {
+               float: right;
+               display: block;
+          }
+
+          .logo {
+               float: left;
+          }
+     }
+
+
+     @media screen and (max-width: 800px) {
+          .mainNav.responsive {
+               position: relative;
+          }
+
+          .mainNav.responsive .icon {
+               position: absolute;
+               right: 0;
+               top: 0;
+          }
+
+          .mainNav.responsive a {
+               float: none;
+               display: block;
+               text-align: center;
+          }
+
+          .mainNav.responsive .logo {
+               float: none;
+          }
+     }
+
+     @media (max-width: 600px) {
+         .flex_container_menu {
+     flex-direction: column;
+     flex-wrap: nowrap;
+
+        }
